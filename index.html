@@ -1,42 +1,37 @@
-<!DOCTYPE html>
+<!-- === index.html === -->
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dashboard Institucional</title>
-<link rel="stylesheet" href="style.css" />
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Resumen Estadístico - ONPE</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><h1>Dashboard de Colecciones</h1></header>
+<div id="app" class="container">
+<header class="header">
+<h1>📊 Resumen Estadístico de la Colección - ONPE</h1>
+<p class="subtitle">Periodo: Datos actualizados al 05 de diciembre de 2025</p>
+<div class="actions">
+<button id="download-json" class="btn">Descargar JSON</button>
+<button id="export-pdf" class="btn">Exportar PDF</button>
+</div>
+</header>
 
 
 <main>
-<section class="card" id="completa">
-<h2>1. Colección Completa</h2>
-<div id="tabla-clasificacion"></div>
-<div id="tabla-indexacion"></div>
-<canvas id="grafico-completa"></canvas>
-</section>
-
-
-<section class="card" id="onpe">
-<h2>2. Colección ONPE</h2>
-<div id="tabla-onpe-clasificacion"></div>
-<div id="tabla-onpe-indexacion"></div>
-<canvas id="grafico-onpe"></canvas>
-</section>
-
-
-<section class="card" id="no-onpe">
-<h2>3. Colección NO ONPE</h2>
-<div id="tabla-noonpe-clasificacion"></div>
-<div id="tabla-noonpe-indexacion"></div>
-<canvas id="grafico-noonpe"></canvas>
-</section>
+<section id="general" class="card"></section>
+<section id="onpe" class="card"></section>
+<section id="onpe-years" class="card"></section>
+<section id="no-onpe" class="card"></section>
+<section id="no-onpe-inst" class="card"></section>
 </main>
 
 
-<script src="app.js"></script>
+<footer class="footer">Fuente: Sistema Bibliográfico KOHA - SGDIE (2025)</footer>
+</div>
+
+
+<script src="app.js" defer></script>
 </body>
 </html>
