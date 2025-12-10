@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard Institucional</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header><h1>Dashboard de Colecciones</h1></header>
+
+
+<main>
+<section class="card" id="completa">
+<h2>1. Colección Completa</h2>
+<div id="tabla-clasificacion"></div>
+<div id="tabla-indexacion"></div>
+<canvas id="grafico-completa"></canvas>
+</section>
+
+
+<section class="card" id="onpe">
+<h2>2. Colección ONPE</h2>
+<div id="tabla-onpe-clasificacion"></div>
+<div id="tabla-onpe-indexacion"></div>
+<canvas id="grafico-onpe"></canvas>
+</section>
+
+
+<section class="card" id="no-onpe">
+<h2>3. Colección NO ONPE</h2>
+<div id="tabla-noonpe-clasificacion"></div>
+<div id="tabla-noonpe-indexacion"></div>
+<canvas id="grafico-noonpe"></canvas>
+</section>
+</main>
+
+
+<script src="app.js"></script>
+</body>
+</html>
