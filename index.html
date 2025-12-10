@@ -1,3 +1,9 @@
+<!--
+Proyecto: Informe ONPE - archivos: index.html, style.css, app.js
+Instrucciones: Copia cada sección a su archivo correspondiente.
+-->
+
+
 <!-- === index.html === -->
 <!doctype html>
 <html lang="es">
@@ -8,30 +14,22 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="app" class="container">
-<header class="header">
-<h1>📊 Resumen Estadístico de la Colección - ONPE</h1>
+<header>
+<img src="icon.png" alt="Icono" class="header-icon">
+<h1>Resumen Estadístico de la Colección - ONPE</h1>
 <p class="subtitle">Periodo: Datos actualizados al 05 de diciembre de 2025</p>
-<div class="actions">
-<button id="download-json" class="btn">Descargar JSON</button>
-<button id="export-pdf" class="btn">Exportar PDF</button>
+<div class="buttons">
+<button id="downloadJson">Descargar JSON</button>
+<button id="exportPdf">Exportar PDF</button>
 </div>
 </header>
 
 
-<main>
-<section id="general" class="card"></section>
-<section id="onpe" class="card"></section>
-<section id="onpe-years" class="card"></section>
-<section id="no-onpe" class="card"></section>
-<section id="no-onpe-inst" class="card"></section>
-</main>
+<main id="content"></main>
 
 
-<footer class="footer">Fuente: Sistema Bibliográfico KOHA - SGDIE (2025)</footer>
-</div>
+<footer>Fuente: Sistema Bibliográfico KOHA - SGDIE (2025)</footer>
 
 
-<script src="app.js" defer></script>
+<script src="app.js"></script>
 </body>
-</html>
